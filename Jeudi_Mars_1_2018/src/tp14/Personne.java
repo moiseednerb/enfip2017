@@ -1,10 +1,8 @@
 package tp14;
 
-public abstract class Personne
+public  class Personne
 {
     private String nom;
-    private String prenom;
-    private int anneeNaissance;
     
     /**
      * 
@@ -12,35 +10,16 @@ public abstract class Personne
      *  
      */
     
-    public void Personne(String nom, String prenom, int anneeNaissance){
-        
+    public  Personne(String nom){
+       
         this.nom = nom;
-        this.prenom = prenom;
-        this.anneeNaissance = anneeNaissance;
-        
-    }
+     }
     
     /////////////////////// MODIFIERS /////////////////////////
-    public Personne getPersonne(){
-        
-        return this;
-    }
     
-    ///////////////////////////////////////////////////////////
-    public String getNom(){
-        
-        return this.nom;
+    @Override
+    public String toString() {
+    	
+    	return this.nom;
     }
-    
-    ///////////////////////////////////////////////////////////
-    public String getPrenom(){
-
-            return this.prenom;
-    }
-    
-    ///////////////////////////////////////////////////////////
-     public int getanneeNaissance(){
-
-             return this.anneeNaissance;
-     }
 }

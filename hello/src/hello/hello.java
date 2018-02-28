@@ -21,7 +21,8 @@ public class hello {
 		
 		//dateHandler();
 		
-		System.out.println("Estoy aqui trabajando para la vida 2018");
+		System.out.println("Estoy aqui trabajando para la vida : "+System.currentTimeMillis()/(3600*1000));
+		
 
 		employe emp = new employe();
 		emp.setNom("Moïse Edner Brutus");

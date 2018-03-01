@@ -6,7 +6,7 @@ public class App
     {
         JeuDeDonnees.initialiser();
         // affichage
-        Personnes.liste();
+        //Personnes.liste();
         Personnes.listeCadreOuvrier();
     }
 }

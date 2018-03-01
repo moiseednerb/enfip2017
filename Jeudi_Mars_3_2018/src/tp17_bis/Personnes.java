@@ -31,5 +31,25 @@ public class Personnes
             System.out.println(p);
         }
     }
+    
+    /**
+     * 
+     *  Here is a sigle block aiming to define : 
+     *          1. Liste des cadre
+     *          2. Liste des  ouvriers
+     */
+    public static void listeCadreOuvrier(){
+        
+        for (Personne p: alPers){
+            
+            if (p instanceof Cadre){
+                System.out.println(" Cadre \n" + p);
+            }
+            if (p instanceof Ouvrier) {
+                
+                System.out.println(" Ouvrier \n" + p);
+            }
+        }
+    }
 
 }

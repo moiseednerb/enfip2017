@@ -1,6 +1,6 @@
 package tp14;
 
-public  class Personne
+public abstract class Personne
 {
     private String nom;
     

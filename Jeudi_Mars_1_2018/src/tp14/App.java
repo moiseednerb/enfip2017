@@ -14,12 +14,12 @@ public class App {
 	 System.out.println(objCadre.toString() + " Sal:"+objCadre.calcSalaire(400));
 	 
 	 
-	 Personne objPersonne = new Personne("test");
+
 	 
 	 Ouvrier objOuvrier = new Ouvrier("Moise Edner Brutus", 7, 5, 7.5, 400);
 	 System.out.println(objOuvrier.toString()+ " Sal:"+objOuvrier.calcSalaire());
 	 
-	 System.out.println(testFolie(objPersonne));
+	
 	}
 	
 	////////////////////////////////////////////////////////////////////////////////

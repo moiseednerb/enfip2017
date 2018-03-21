@@ -22,7 +22,7 @@ public final class Ouvrier extends Employe{
 	public String toString() {
 		String objString;
 		
-		objString = "Ouvrier ["+super.toString()+" - nbHeures:"+this.nbHeures+"]";
+		objString = "Ouvrier ["+super.toString()+" -  nbHeures:"+this.nbHeures+"]";
 		
 		return objString;
 	}

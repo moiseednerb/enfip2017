@@ -1,6 +1,7 @@
 package tp15;
 
-public class Personnes
-{
+public class Personnes {
+	
+	
 
 }

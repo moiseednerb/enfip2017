@@ -4,6 +4,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -34,9 +35,6 @@ public class Acteurs
         
          
         dataSet = Loader.loading();
-        
-        
- 
         try
         {
             while(dataSet.next()){
@@ -84,9 +82,19 @@ public class Acteurs
     ///////////// METHOD 4 ////////////////////////////////////////////////////
     public static void afficheListeActeur(){
         int i;
-        Collections.sort(objActorCollection,Collections.reverseOrder());
-        for(i=0;i<objActorCollection.size();i++){
-            System.out.println(objActorCollection.get(i).toString());
+        if (!objActorCollection.isEmpty()){
+            Collections.sort(objActorCollection,new Comparator<Acteur>(){
+                    @Override
+                    public int compare(final Acteur object1, final Acteur object2) {
+                            return object1.toString().compareTo(object2.toString());
+                        }
+                    });
+            for(i=0;i<objActorCollection.size();i++){
+                    System.out.println(objActorCollection.get(i).toString());
+                }
+        }
+        else{
+            System.out.println("No data loaded");
         }
         
     }

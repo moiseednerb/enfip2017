@@ -1,6 +1,6 @@
 package bdd02;
 
-import  bdd02.Film;
+import bdd02.Film;
 
 public class Acteur
 {
@@ -18,7 +18,7 @@ public class Acteur
      *  CONSTRUCTOR AND METHODS
      * 
      */
-    public void Acteur(int id, String nom, String prenom){
+    public  Acteur(int id, String nom, String prenom){
         
         this.id = id;
         this.nom = nom;
@@ -38,7 +38,7 @@ public class Acteur
     public String toString(){
         String objActeur =  "";
         
-        objActeur = this.nom +" "+this.prenom+" :\n"+objFilm.toString();
+        objActeur = this.nom +" "+this.prenom; //:\n"+objFilm.toString();
         
         return objActeur; 
     }
